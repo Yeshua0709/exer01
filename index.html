@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSIV?</title>
+
+    <style>
+    /*
+       dark blue: 003049
+       red : d62828
+       orange: f77f00
+       yellow : fcbf49
+       dirty white: eae2b7 
+    
+    */
+    
+    .color{
+        color:#003049;
+    }
+    .hl{
+        color:#f73100;
+    }
+    .yellow{
+        color: #fcbf49;
+    }
+    *{
+        padding:0;
+        margin:0;
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    body{
+        background-color: #f3f1e1 ;
+    }
+    header{
+      text-align: center;
+        background-color: #003049;
+        color:white;
+        padding: 2em 1em;
+    }
+    .nav-container{
+        max-width: 900px;
+        margin: auto;
+    }
+    .title{
+        font-size:4em;
+        
+    }
+    .subtitle{
+        font-family:'Courier New', Courier, monospace;
+        margin-top: -0.5em;
+        text-align: right;
+        max-width: 800px;
+    }
+    /* BODY */
+    .container{
+        padding-top: 1.5em;
+        max-width: 1100px;
+    }
+    .banner-container{
+        width: 100%;
+    }
+    .text-container{
+        text-align: justify;
+        color:#4d4d4d;
+        padding-top: 1.5em;
+    }
+    .text-container p{
+        font-size: 1.25rem;
+        line-height: 2;
+    }
+    .list-title{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        max-width: 1100px;
+        color:#f73100;
+        text-align: left;
+        font-size: 3.2em;
+        letter-spacing: 0.09rem;
+        
+    }
+    .gallery-img{
+        background-color: #003049;
+        color:white;
+        padding:2em 0;
+    }
+    .column{
+        display: flex;
+        max-width: 1100px;
+       justify-content: space-around;
+       padding: 2em 0;
+    }
+    .frame-now{
+        display: flex;
+        flex-direction: column;
+    }
+    .div img{
+        border: 2px solid #003049
+    }
+    
+    a{
+        color:white;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:1.5em;
+    }
+    .table-content{
+        padding-top: 2em;
+    }
+    .demo-title{
+        max-width: 1100px;
+        text-align:right;    }
+    .table{
+        max-width: 1100px;
+        margin-top:1em;
+        padding:2em 0;
+    }
+    table{
+    padding:0;
+    margin:0;
+    width: 100%;
+    border:2px solid #003049;
+
+    }
+
+    th{
+     padding:0;
+    margin:0;
+    border-bottom:1px solid #ddd;
+    font-size: 1yem;
+    padding: 1em 0em;
+    color: #f3f1e1;
+    text-transform: uppercase;
+    background-color: #003049;
+    }
+    tr{
+    padding:0;
+    margin:0;
+    font-size: 1.1em;
+    padding: 1em 0em;
+    }
+    
+    td{
+    padding:0;
+    margin:0;
+    border-bottom:1px solid rgb(194, 194, 194);
+    text-align: center;
+
+    padding: 0.8em 0em;
+    }
+   .specific-info{
+       background-color: #f73100;
+       color:white;
+       text-align: left;
+   }
+   .candidate-container{
+       padding: 2em 0;
+       max-width: 1100px;
+       margin: 0 auto;
+   }
+   .candidate-name{
+       color:#003049;
+       font-family: Arial;
+       font-weight: bolder;
+       font-size: 2.3em;
+   }
+   .candidate-container p {
+       font-size: 1.5em;
+       padding: 0.75em 0;
+       font-family: Arial, Helvetica, sans-serif;
+       color:#ffffff
+   }
+
+   .more{
+       background-color: white;
+       border-radius: 20px;
+       padding: 5px;
+       color:#f73100;
+       font-size:1.2em;
+       
+   }
+   nav{
+       max-width: 900px;
+       margin: auto;
+       margin-top:1em;
+       border-top:1px solid white;
+   }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+   nav ul li {
+       list-style: none;
+       
+   }
+   nav ul li a{
+       font-family: 'Bahnschrift';
+            font-size: 1.25em;
+   }
+   .reference-container{
+       max-width: 1100px;
+       text-align: left;
+       padding-top:2em;
+       padding-bottom: 2em;
+       }
+    .reference-container h1{
+        color:#003049;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 0.09em;
+    }
+    .reference-container h2{
+        color: #f73100;
+        font-weight: 900;
+        padding-top: 0.5em;
+    }
+    .reference-container a{
+        color:rgb(88, 88, 88);
+    }
+    footer{
+        background-color: #003049;
+        color: #f3f1e1;
+        text-align: center;
+        padding:0.5em;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <h1 class="title">WHO SHOULD I VOTE?</h1>
+        <h3 class="subtitle">A guide to PRESIDENTIAL candidates' profile</h3>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#1">Discussion</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<center>
+<div class="container">
+
+    <div class="banner-container">
+        <div class="img-container">
+            <img src="images/banner1.jpg" width="100%">
+        </div>
+        
+        <div class="text-container" id="intro">
+            <p>With a marker in hand and an elongated ballot sheet in front of us, we citizens elect our fellow citizens based on the responses we've come up with to the question, "What will happen after the elections?"
+                Though I would not debate the importance or truth of this topic, I believe we must also consider the following: "Why should we vote?"
+                "We should vote," as a positive and frequently stated response, cannot stand up to the weight of a subject that requires additional investigation.
+                <br>
+                <br>
+                <b><i class="color">So, what's the point of asking the question?</i></b>
+                <br><br>
+                Consequently, we must remember that while our votes help politicians win, they also contribute to maintain our democratic system as a whole. 
+                We are not only electing particular politicians, but also validating the government process of our country. Votes determine victory, and voter 
+                turnout establishes a political system's legitimacy. Citizens have the power to determine the state's survival, development, or extinction as members of the
+                 state (at the very least as tax payers).
+                 <br>
+                <br>
+                Moreover, A political system can gain its legitimacy through numerical
+                 means through the election process. Though this is insufficient
+                  to assure near-absolute legitimacy (the goal for legitimate 
+                  government), it is adequate to allow a system to establish
+                   internal cohesiveness (i.e., it will continue to operate as a
+                    whole) and to legitimize its existence as a power center in
+                     our country.
+                <br>
+                <br>
+                All in all, there 97 presidential candidates. Here, we are only going to present candidates who had served before and experienced in the field of politics. Also, in the 
+                past few months, these are the names that are mostly mentioned online.
+                <br>
+                <br>
+              <b>  <i class="color">Without further ado...</i></b>
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="gallery-img">
+<h1 class="list-title yellow">THE 2022's TRENDING PRESIDENTIAL CANDIDATES</h1>
+
+<div class="column">
+    <div class="frame-row">
+        <div class="div"><img src="images/1.jpg" width="95%"></div>
+
+       <a href="#1">Christopher Tesoro <b class="hl">Bong</b> Go</a>
+    </div>
+
+    <div class="frame-row">
+        <div class="div"><img src="images/2.jpg" width="95%"></div>
+        <a href="#2">Francisco <b class="hl">Isko Moreno</b> Domagoso</a>
+    </div>
+
+    <div class="frame-row">
+        <div class="div"><img src="images/3.jpg" width="95%"></div>
+        <a href="#3">Panfilo <b class="hl">Ping</b> Lacson</a>
+    </div>
+</div>
+
+<div class="column">
+    <div class="frame-row">
+        <div class="div"><img src="images/4.jpg" width="95%"></div>
+        <a href="#4">Ferdinand <b class="hl">Bongbong</b> Marcos Jr.</a>
+    </div>
+
+    <div class="frame-row">
+        <div class="div"><img src="images/5.jpg" width="95%"></div>
+        <a href="#5">Emmanuel <b class="hl">Manny</b> Pacquiao</a>
+    </div>
+
+    <div class="frame-row">
+        <div class="div"><img src="images/6.jpg" width="95%"></div>
+        <a href="#6">Maria Leonor <b class="hl">Leni</b> Robredo</a>
+    </div>
+</div>
+</div>
+<div class="table-content">
+<h1 class="demo-title list-title">Quick Demographic Overview</h1>
+<div class="table">
+    <table>
+        <tr class="bg-color">
+          <th>Name</th>
+          <th>Age</th>
+          <th>Previous Government Position</th>
+          <th>Preference Survey</th> 
+          <th>Political Party </th>
+        </tr>
+
+        <tr>
+          <td>Christopher Tesoro Go</td>
+          <td>47</td>
+          <td>Senator</td>
+          <td>5% (6th)</td>
+          <td>PdP Laban</td>
+        </tr>
+
+        <tr>
+            <td>Francisco Domagoso</td>
+          <td>47</td>
+          <td>Manila's City Mayor</td>
+          <td>13% (3rd)</td>
+          <td>AKSYON DEMOKRATIKO</td>
+        </tr>
+
+        <tr>
+            <td>Panfilo Lacson</td>
+          <td>73</td>
+          <td>Senator</td>
+          <td>5% (6th)</td>
+          <td>PDR</td>
+        </tr>
+
+        <tr>
+            <td>Ferdinand Marcos Jr.</td>
+          <td>64</td>
+          <td>Senator (2010-2016)</td>
+          <td>47% (1st)</td>
+          <td>PFP</td>
+        </tr>
+
+        <tr>
+            <td>Emmanuel Pacquiao</td>
+          <td>42</td>
+          <td>Senator (2010-2016)</td>
+          <td>9% (4th) </td>
+          <td>ABAG PROMDI        </td>
+        </tr>
+
+        <tr>
+            <td>Maria Leonor Robredo</td>
+          <td>42</td>
+          <td>Vice President</td>
+          <td>18% (2nd)</td>
+          <td>Independent</td>
+        </tr>
+      </table>
+</div>
+</div>
+
+<div class="specific-info">
+    <div class="candidate-container">
+        <h2 class="candidate-name" id="1">
+            Christopher Tesoro "Bong" Go
+        </h2>
+        <p>
+             is a  politician serving as a Senator since 2019. He previously served in President Rodrigo Duterte's Cabinet 
+             as Special Assistant to the President and Head of the Presidential Management Staff from June 2016 to October 2018. It was later announced
+             that he will run for presidency when he swapped with Senator Bato Dela Rosa.
+        </p>
+        <a href="info.html#1" class="more">More information here</a>
+    </div>
+
+   <center><hr width="1100px" color="white"></center> 
+
+    <div class="candidate-container" id='2'>
+        <h2 class="candidate-name">
+            Francisco "Isko Moreno" Domagoso
+        </h2>
+        <p>
+            Francisco Moreno Domagoso, also known by his stage name Isko Moreno, is a Filipino politician and actor currently serving as the 22nd mayor of Manila since 2019. ... He entered politics in 1998 and ran for councilor and was elected for three consecutive terms as a member of the Manila City Council.
+        </p>
+        <a href="info.html#2" class="more">More information here</a>
+    </div>
+
+    <center><hr width="1100px" color="white"></center> 
+
+    <div class="candidate-container" id='3'>
+        <h2 class="candidate-name">
+            Panfilo "Ping" Lacson
+        </h2>
+        <p>
+            Panfilo "Ping" Morena Lacson Sr. is a Filipino politician and former police general serving as a Senator since early 2016, and previously from 2001 to 2013. He was also the Director General of the Philippine National Police from 1999 to 2001, and was a candidate in the 2004 presidential election. 
+        </p>
+        <a href="info.html#3" class="more">More information here</a>
+    </div>
+
+    <center><hr width="1100px" color="white"></center> 
+
+    <div class="candidate-container" id='4'>
+        <h2 class="candidate-name">
+            Ferdinand "Bongbong" Marcos Jr.
+        </h2>
+        <p>
+            Ferdinand "Bongbong" Romualdez Marcos Jr. is a Filipino politician who served as a senator from 2010 to 2016. He is the second child and only son of the president and dictator Ferdinand Marcos Sr. and former First Lady Imelda Romualdez Marcos. Today, he’s facing a lot of issues regarding his degree and drug usage. 
+        </p>
+        <a href="info.html#4" class="more">More information here</a>
+    </div>
+    <center><hr width="1100px" color="white"></center> 
+    <div class="candidate-container" id='5'>
+        <h2 class="candidate-name">
+            Emmanuel "Manny" Pacquiao
+        </h2>
+        <p>
+            Manny Pacquiao is a Filipino professional boxer, media celebrity, and politician who became world-famous for winning boxing titles in more weight classes than any other boxer in history. He rose from abject poverty to the pinnacle of his sport, and he also eventually became a senator in the Philippines last election.
+        </p>
+        <a href="info.html#5" class="more">More information here</a>
+    </div>
+    <center><hr width="1100px" color="white"></center> 
+
+    <div class="candidate-container" id='6'>
+        <h2 class="candidate-name">
+            Maria Leonor Leni Robredo
+        </h2>
+        <p>
+            Maria Leonor "Leni" Gerona Robredo is a Filipina lawyer, politician, and social activist who is the 14th and incumbent vice president of the Philippines. Robredo was the wife of the late Interior Secretary Jesse Robredo. She served as the representative of Camarines Sur's 3rd district from 2013 until her inauguration as vice president in 2016. In the vice presidential election, Robredo defeated Bongbong Marcos by a narrow margin of 263,473 votes
+        </p>
+        <a href="info.html#6" class="more">More information here</a>
+    </div>
+
+
+</div>
+
+<div class="reference-container" id="ref">
+<h1>References:</h1>
+
+<h2>Introduction</h2>
+<a href="https://www.rappler.com/voices/ispeak/vote-philippines-elections"> ➟ "Why should we vote?(Rappler)"</a>
+
+<h2>Preference Survey</h2>
+<a href="https://www.facebook.com/philstarnews/photos/basw.Abps5bnJnz5tg3SOusX-EP0TnHv5F4W6W2rS2S7Rs5coxL4MzFH_B-9bCvVKirjPunO4W2BdyzHm1rj130CC-XGbHAK4VRefAJBcAYV-_TqzOYSJXYESgT0Sw-jtWvrmc140Z73KJzEjK2DoeuXVyFPyvvcwdKBRX-XGv3dH5tZ0kg/10166605950275713/?opaqueCursor=AbrdMJS1u_BChNOFSGjVF7jxmovKhaNMJCO9FXavC7H2-HE3eSy4uVhS48Lp3yYogFJ9kj4ds8q_PKc20fWd0_-odxGFT78nkd_Kc13GjJr98r3KIb0QcQgU4drjpZaUeOxZCjqU3eeXHmCTH-zWnPhmwqMcs42F4h7-KKud6RI2DytpnutXfmvhJ-rX4kSzSwa-PI2JpBpy35ZeLkix57SMRjyH9XmpIaIhWziEKHcs_sNyMfHqDwOcGCBd-sWAj1FvFRPbJrgn3WDvgB2o2simTdq7jqZvzBykp4avr3RFZT36zJVS_WhUIICQDdcoZ1gw9x3m1F4aC6MYXqM8JRgeQNAZf3DI2Z30p13XZT7cNkpZniRsHwsBJAwQvjjeupCHEgC4kuWDC5oYReF17aiLyAg3cdhJ3yyt9MaO824ExVSW4wt89VS3j90xNP7lNBugLhv_swiJw4cr-W2QQdshAkJo1LgdUgM-33-cuMy_bkYK4d6HbOnvR_pO3ZNV5MJtlGvSUjeksJygDSkhHjTGo6XVPq6eRFpMgnVdJ67D8wR2qVRDIe9erp7TEkCfINrkEKMVUsRaPeIZaKXUMrDOgI5dDf3Y77i4pg6-lCr7jsd-AGnETqJ_24m_x31WCkVrHkQFG3eoq_hA06HxmBJLo6plbSDQPQWK1cVgg0JiMxepF5Mja9DzsM5TBywc74dGV-jSdY5pjreeO1cnU2g_B1S0lGdIF54z1tzBnFBQpF3ja9QddcquZROX894YUUuJY5MTuiXdq4eCTaXcog82iOj1ThSStzfz4odLAw60zw">
+    ➟ Philstar FB Page
+</a>
+
+<h2>Candidates' Platform</h2>
+<a href="https://www.philstar.com/business/2021/11/18/2142211/presidential-hopefuls-woo-bizmen-bare-economic-plans?fbclid=IwAR1WFGWjhFeV9hNVY7_N0ixGMsZNrin4M8sW78jfBjmrF1UNbM3P16S2nDU">
+    ➟ Philstar Global
+</a>
+
+<h2>Pacquiao's Article</h2>
+<a href="https://www.lowyinstitute.org/the-interpreter/politics-pacman">
+    ➟ The Interpreter
+</a>
+
+<h2>Robredo's Article</h2>
+<a href="https://www.rappler.com/nation/elections/leni-robredo-to-run-president-2022">
+    ➟  Rappler
+</a>
+<h2>Images</h2>
+<a href="https://www.google.com"> ➟ Google</a>
+</div>
+</center>
+
+<footer>No copyright infringement intended. Only made for educational purposes only. Yeshua Miguel Abrenica</footer>
+</body>
+</html>
